@@ -1,0 +1,113 @@
+.line {
+    width: 100%;
+    height: 0;
+    background: #ccc;
+}
+.userlist {
+    max-width: 1300px;
+    height: 375px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin:0 auto;
+    padding: 23px 25px 0 25px;
+    position: relative;
+    margin-bottom: 50px;
+    overflow-y: auto;
+}
+.userlist::-webkit-scrollbar {
+    width: 0;
+}
+.userlist h2 {
+    margin:0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color:#000;
+}
+.line {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border:1px solid #ccc;
+    left:0;
+    margin-top: 23px;
+}
+table {
+    margin-top: 73px;
+    display: block;
+}
+.headTr, .bodyTr {
+    width: 1247px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headTr {
+    margin-bottom: 23px;
+}
+.secondTh, .firstTh, .thirdTh, 
+.fourthTh, .fifthTh, .sixthTh, 
+.seventhTh, .eightTh, .ninethTh {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.firstTh {
+    width: 48px;
+    height: 48px;
+}
+.secondTh {
+    width: 160px;
+    height: 48px;
+}
+.thirdTh {
+    width: 160px;
+    height: 48px;
+}
+.fourthTh {
+    width: 160px;
+    height: 48px;
+}
+.fifthTh {
+    width: 220px;
+    height: 48px;
+}
+.sixthTh {
+    width: 136px;
+    height: 48px;   
+}
+.seventhTh {
+    width: 160px;
+    height: 48px;
+}
+.eightTh {
+    width: 155px;
+    height: 48px;
+}
+.ninethTh {
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.ninethTh button {
+    border:none;
+    background: none;
+    position: absolute;
+    left: 20.83%;
+    right: 20.83%;
+    top: 12.5%;
+    bottom: 12.5%;
+    cursor: pointer;
+}

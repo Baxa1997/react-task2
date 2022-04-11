@@ -1,0 +1,74 @@
+.jobtype {
+    width: 375px;
+    height: 375px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    padding: 23px 87px 78px 23px;
+    margin: 0px 0px 50px 70px;
+    display: block;
+    overflow-y: auto;
+}
+.jobtype::-webkit-scrollbar {
+    width: 0;
+}
+.jobtype h2 {
+    margin:0 0 22px;
+    padding:0;
+    width: 126px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+}
+.jobtype .line {
+    margin:0;
+}
+.jobThead, .jobTbody {
+    width: 256px;
+    height: 48px;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jobTbody {
+    margin-top: 23px;
+}
+.firstJobTh, .firstJobTbody {
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondJobTh, .secondJobTbody {
+    width: 160px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdJobTh, .thirdJobTbody {
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdJobTbody button {
+    outline: 0;
+    background: none;
+    width: 28px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E5E9EB;
+    border-radius: 6px;
+    cursor: pointer;
+}
