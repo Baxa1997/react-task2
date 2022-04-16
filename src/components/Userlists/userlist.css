@@ -60,6 +60,7 @@ table {
     box-shadow: inset 1px 1px 0px #E5E9EB, inset -1px -1px 0px #E5E9EB;
     padding-left: 12px;
     padding-top: 12px;
+    word-break: auto;
 }
 
 .firstTh {

@@ -2,8 +2,8 @@ import React from 'react';
 import './jobtype.css';
 import DeleteIcon from '../../Assets/images/deleteIcon.png';
 
-const Jobtype = ({selectType, DeleteChosenTypes}) => {
-    console.log(selectType)
+const Jobtype = ({types, deleteTypes}) => {
+    console.log(types)
     return (
       <>
         <div className="jobtype">
@@ -18,12 +18,14 @@ const Jobtype = ({selectType, DeleteChosenTypes}) => {
                     <th className='thirdJobTh'></th>
                     </tr>
                 </thead>
-                   {selectType && selectType.map(types => (
+                   {types && types.map(types => (
                        <tbody className='jobTbody'>
                        <tr className='jobTbody'>
                        <td className='firstJobTbody'>{types?.id}</td>
                        <td className='secondJobTbody'>{types?.label}</td>
-                       <td className='thirdJobTbody'><button type="button" onClick={() => DeleteChosenTypes(types?.id)}><img src={DeleteIcon} alt="" /></button></td>
+                       <td className='thirdJobTbody'>
+                           <button type="button" onClick={() => deleteTypes(types?.id)}><img src={DeleteIcon} alt="" /></button>
+                           </td>
                        </tr>
                        </tbody>
                    ))}

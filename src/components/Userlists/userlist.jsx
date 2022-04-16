@@ -2,9 +2,8 @@ import React from 'react';
 import './userlist.css';
 import DeleteIcon from '../../Assets/images/deleteIcon.png';
 
-const Userlist = ({users, DeleteUserChosen}) => {
-    
-    console.log(users.map((user) => console.log(user)))
+const Userlist = ({users, deleteUsers ,types}) => {
+    console.log(types)
     return (
         <>
             <div className="userlist">
@@ -24,32 +23,22 @@ const Userlist = ({users, DeleteUserChosen}) => {
                         <th className='eightTh'>Experience</th>
                         <th className='ninethTh'></th>
                     </tr>
-                    {users && users.map((user) => (
-                        <tr className='bodyTr'>
-                        <td className='firstTh'>{user?.uuid}</td>
-                        <td className='secondTh'>{user?.user_infos?.firstName} {user?.user_infos?.lastName}</td>
-                        <td className='thirdTh'>{user?.user_infos.dateBirth}</td>
-                        <td className='fourthTh'>{user?.user_infos.phoneNumber}</td>
-                        <td className='fifthTh'>{user?.user_infos.email}</td>
-                        <td className='sixthTh'>{user?.work_infos?.companyname}</td>
-                        <td className='seventhTh'>{user?.work_infos?.jobType}</td>
-                        <td className='eightTh'>{user?.work_infos?.experience}</td>
-                        <td className='ninethTh'> <button><img src={DeleteIcon} alt="" onClick={() =>
-                        DeleteUserChosen(user?.uuid)
-                        }/></button></td>
-                    </tr>
-                    ))}
-                    {/* <tr className='bodyTr'>
-                        <td className='firstTh'>1</td>
-                        <td className='secondTh'>Dena Hilll</td>
-                        <td className='thirdTh'>03.03.1996</td>
-                        <td className='fourthTh'>+ 998 90 123 45 67</td>
-                        <td className='fifthTh'>Denahill@gmail.com</td>
-                        <td className='sixthTh'>Amazon</td>
-                        <td className='seventhTh'>Developer</td>
-                        <td className='eightTh'>5</td>
-                        <td className='ninethTh'> <button><img src={DeleteIcon} alt="" /></button></td>
-                    </tr> */}
+
+                     {users && users.map((value) => (
+                         <tr className='bodyTr'>
+                         <td className='firstTh'>{value?.uuid}</td>
+                         <td className='secondTh'>{value?.user_infos.firstName} {value?.user_infos.lastName}</td>
+                         <td className='thirdTh'>{value?.user_infos.dateBirth}</td>
+                         <td className='fourthTh'>{value?.user_infos.phoneNumber}</td>
+                         <td className='fifthTh'>{value?.user_infos.email}</td>
+                         <td className='sixthTh'>{value?.work_infos?.companyName}</td>
+                         <td className='seventhTh'>{value?.work_infos?.jobType}</td>
+                         <td className='eightTh'>{value?.work_infos?.experience}</td>
+                         <td className='ninethTh'> 
+                         <button type='button' onClick={() => deleteUsers(value?.uuid)}><img src={DeleteIcon} alt=""/>
+                         </button></td>
+                       </tr>
+                      ))} 
                 </table>
             </div>
         </>
